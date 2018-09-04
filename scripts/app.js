@@ -13648,6 +13648,26 @@ sliders.filter(function (slider) {
   return slider.isEnabled && new Slider(slider.selector, slider.config);
 });
 
+var Scroll = function Scroll() {
+  var $root = jquery$1('body,html');
+  var $menu = jquery$1('.js-nav');
+  // const $order = $('.header-options');
+
+  init();
+
+  function init() {
+    // $order.on('click', 'a', scrollToBlock);
+    $menu.on('click', 'a', scrollToBlock);
+  }
+
+  function scrollToBlock(e) {
+    e.preventDefault();
+    var id = jquery$1(this).attr('href');
+    var top = jquery$1(id).offset().top;
+    $root.animate({ scrollTop: top }, 800);
+  }
+};
+
 var Dropdown = function Dropdown() {
   var $currentLang = jquery$1('.js-lang');
   var $changeLang = jquery$1('.js-lang-hidden');
@@ -13747,8 +13767,7 @@ var Tabs = function Tabs() {
   }
 };
 
-// import Scroll from './anchor-scroll'
-// Scroll();
+Scroll();
 Dropdown();
 Modal();
 Menu();
