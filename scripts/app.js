@@ -13847,7 +13847,7 @@ var Modal = function Modal() {
     $popupCallBtn.on('click', showModal);
     jquery$1(document).on('mousedown', handleDocumentClick);
     $closeBtn.on('mousedown', hideModal);
-    jquery$1(document).on('scroll', hideBlock);
+    // $(document).on('scroll', hideBlock)
   }
 
   function showModal() {
@@ -13866,9 +13866,9 @@ var Modal = function Modal() {
     jquery$1(this).parent($modalWindow).hide();
   }
 
-  function hideBlock() {
-    jquery$1('.header-wrapper').slideUp();
-  }
+  // function hideBlock() {
+  //   $('.header-wrapper').slideUp();
+  // }
 };
 
 var Menu = function Menu() {
@@ -13889,6 +13889,13 @@ var Menu = function Menu() {
 
   function hideMenu() {
     $burgerMenu.slideUp(700);
+  }
+
+  if (jquery$1('#js-scrollspy').length > 0) {
+    var spy = new ScrollSpy('#js-scrollspy', {
+      nav: '.js-scrollspy-nav > a',
+      className: 'is-inview'
+    });
   }
 };
 
@@ -13917,9 +13924,4 @@ Dropdown();
 Modal();
 Menu();
 Tabs();
-
-var spy = new ScrollSpy('#js-scrollspy', {
-  nav: '.js-scrollspy-nav > a',
-  className: 'is-inview'
-});
 //# sourceMappingURL=app.js.map
