@@ -232,9 +232,15 @@
                 <label for="salary" class="vacancy-form__label">Your financial expectations
                   <input type="text" class="vacancy-form__input" id="salary" placeholder="$">
                 </label>
-                <label for="english" class="vacancy-form__label">Your level of English
-                  <input type="text" class="vacancy-form__input" id="english" placeholder="Fluent">
-                </label>
+                <div class="vacancy-form__label">Your level of English
+                  <div class="select">
+                    <select class="custom-select">
+                      <option value="hide">Fluent</option>
+                      <option value="married"> Upper-Intermediate</option>
+                      <option value="divorced">Intermediate</option>
+                    </select>
+                  </div>
+                </div>
               </div>
               <label class="vacancy-form__label" for= "expectations">Your expectations from projects</label>
               <textarea name="expectations" id="expectations" class="vacancy-form__mssg vacancy-form__input"></textarea>
