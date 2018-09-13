@@ -13912,9 +13912,26 @@ var Tabs = function Tabs() {
   }
 };
 
+var Policy = function Policy() {
+
+  var $policyWindow = jquery$1('.js-cookie');
+  var $policySubmit = jquery$1('.js-cookie-btn');
+
+  init();
+
+  function init() {
+    $policySubmit.on('click', hideBlock);
+  }
+
+  function hideBlock() {
+    $policyWindow.fadeOut();
+  }
+};
+
 Scroll();
 Dropdown();
 Modal();
 Menu();
 Tabs();
+Policy();
 //# sourceMappingURL=app.js.map
