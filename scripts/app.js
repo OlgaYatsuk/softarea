@@ -13680,7 +13680,7 @@ var Slider = function () {
 
     var defaultConfig = {
       autoplaySpeed: 2200,
-      // autoplay: true,
+      autoplay: true,
       pauseOnHover: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -13712,7 +13712,6 @@ var Slider = function () {
 var sliders = [{
   selector: $introSlider,
   isEnabled: true,
-  autoplay: false,
   config: {
     dots: false,
     fade: false,
@@ -13974,10 +13973,48 @@ var Policy = function Policy() {
   }
 };
 
+var Header = function Header() {
+
+  var scroll = jquery$1(document).scrollTop();
+  var headerHeight = jquery$1('.header-wrapper').outerHeight();
+  var headerHiddenHeight = jquery$1('.header-hidden').outerHeight();
+
+  jquery$1(window).scroll(function () {
+    var scrolled = jquery$1(document).scrollTop();
+    if (scrolled > headerHeight) {
+      jquery$1('.header-wrapper').addClass('off-canvas');
+    } else {
+      jquery$1('.header-wrapper').removeClass('off-canvas');
+    }
+    if (scrolled > scroll) {
+      jquery$1('.header-wrapper').removeClass('fixed');
+    } else {
+      jquery$1('.header-wrapper').addClass('fixed');
+    }
+    scroll = jquery$1(document).scrollTop();
+  });
+
+  jquery$1(window).scroll(function () {
+    var scrolled = jquery$1(document).scrollTop();
+    if (scrolled > headerHiddenHeight) {
+      jquery$1('.header-hidden').addClass('fixed');
+    } else {
+      jquery$1('.header-hidden').removeClass('fixed');
+    }
+    if (scrolled > scroll) {
+      jquery$1('.header-hidden').removeClass('off-canvas');
+    } else {
+      jquery$1('.header-hidden').addClass('off-canvas');
+    }
+    scroll = jquery$1(document).scrollTop();
+  });
+};
+
 Scroll();
 Dropdown();
 Modal();
 Menu();
 Tabs();
+Header();
 Policy();
 //# sourceMappingURL=app.js.map
