@@ -13680,7 +13680,7 @@ var Slider = function () {
 
     var defaultConfig = {
       autoplaySpeed: 2200,
-      autoplay: true,
+      autoplay: false,
       pauseOnHover: true,
       slidesToShow: 1,
       slidesToScroll: 1,
