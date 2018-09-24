@@ -13669,7 +13669,6 @@ var createClass = function () {
   };
 }();
 
-var $introSlider = jquery$1('.intro__slider');
 var $servicesItem = jquery$1('.services__item-wrapper');
 var $servicesDescription = jquery$1('.services__description-wrapper');
 var $valuesSlider = jquery$1('.js-values-slider');
@@ -13709,30 +13708,7 @@ var Slider = function () {
   return Slider;
 }();
 
-var sliders = [
-// {
-//   selector: $introSlider,
-//   isEnabled: true,
-//   config: {
-//     dots: false,
-//     fade: false,
-//     cssEase: 'ease',
-//
-//     responsive: [{
-//       breakpoint: 900,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         centerMode: true,
-//         variableHeight: true,
-//         dots: false,
-//         infinite: true,
-//       }
-//     }],
-//   }
-// },
-
-{
+var sliders = [{
   selector: $servicesDescription,
   isEnabled: true,
   config: {
