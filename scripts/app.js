@@ -13384,7 +13384,7 @@ var slick = createCommonjsModule(function (module, exports) {
 }));
 });
 
-function ScrollSpy$1 (wrapper, opt) {
+function ScrollSpy (wrapper, opt) {
 
   this.doc = document;
   this.wrapper = (typeof wrapper === 'string') ? this.doc.querySelector(wrapper) : wrapper;
@@ -13402,12 +13402,12 @@ function ScrollSpy$1 (wrapper, opt) {
   this.init();
 }
 
-ScrollSpy$1.prototype.init = function () {
+ScrollSpy.prototype.init = function () {
   this.contents = this.getContents();
   this.attachEvent();
 };
 
-ScrollSpy$1.prototype.getContents = function () {
+ScrollSpy.prototype.getContents = function () {
   var targetList = [];
 
   for (var i = 0, max = this.nav.length; i < max; i++) {
@@ -13419,7 +13419,7 @@ ScrollSpy$1.prototype.getContents = function () {
   return targetList;
 };
 
-ScrollSpy$1.prototype.attachEvent = function () {
+ScrollSpy.prototype.attachEvent = function () {
   this.win.addEventListener('load', (function () {
     this.spy(this.callback);
   }).bind(this));
@@ -13455,7 +13455,7 @@ ScrollSpy$1.prototype.attachEvent = function () {
   }).bind(this));
 };
 
-ScrollSpy$1.prototype.spy = function (cb) {
+ScrollSpy.prototype.spy = function (cb) {
   var elems = this.getElemsViewState();
 
   this.markNav(elems);
@@ -13465,7 +13465,7 @@ ScrollSpy$1.prototype.spy = function (cb) {
   }
 };
 
-ScrollSpy$1.prototype.getElemsViewState = function () {
+ScrollSpy.prototype.getElemsViewState = function () {
   var elemsInView = [],
     elemsOutView = [],
     viewStatusList = [];
@@ -13489,7 +13489,7 @@ ScrollSpy$1.prototype.getElemsViewState = function () {
   };
 };
 
-ScrollSpy$1.prototype.isInView = function (el) {
+ScrollSpy.prototype.isInView = function (el) {
   var winH = this.winH,
     scrollTop = this.doc.documentElement.scrollTop || this.doc.body.scrollTop,
     scrollBottom = scrollTop + winH,
@@ -13500,7 +13500,7 @@ ScrollSpy$1.prototype.isInView = function (el) {
   return (elTop < scrollBottom) && (elBottom > scrollTop);
 };
 
-ScrollSpy$1.prototype.markNav = function (elems) {
+ScrollSpy.prototype.markNav = function (elems) {
   var navItems = this.nav,
     isAlreadyMarked = false;
 
@@ -13515,7 +13515,7 @@ ScrollSpy$1.prototype.markNav = function (elems) {
 };
 
 
-var scrollspy$2 = ScrollSpy$1;
+var scrollspy$2 = ScrollSpy;
 
 var scrollspy = createCommonjsModule(function (module) {
 /**
@@ -13912,13 +13912,6 @@ var Menu = function Menu() {
     $burgerMenuIcon.show();
     $burgerCloseBtn.hide();
     jquery$1('.header-hidden').css('background', 'rgba(255, 255, 255, 0.55)');
-  }
-
-  if (jquery$1('#js-scrollspy').length > 0) {
-    var spy = new ScrollSpy('#js-scrollspy', {
-      nav: '.js-scrollspy-nav > a',
-      className: 'is-inview'
-    });
   }
 };
 
