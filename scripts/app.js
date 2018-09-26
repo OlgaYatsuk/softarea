@@ -13926,13 +13926,81 @@ var Tabs = function Tabs() {
   }
 
   function showTab() {
-    var $tabId = jquery$1(this).attr('data-tab');
     $tab.removeClass('is-active');
     $tabContent.removeClass('is-active');
 
     jquery$1(this).addClass('is-active');
-    jquery$1("#" + $tabId).addClass('is-active');
   }
+
+  jquery$1("#healthcare").on('click', function () {
+    jquery$1(".sales").hide();
+    jquery$1(".education").hide();
+    jquery$1(".energy").hide();
+    jquery$1(".logistics").hide();
+    jquery$1(".airport").hide();
+    jquery$1(".software").hide();
+    jquery$1(".healthcare").fadeIn();
+  });
+
+  jquery$1('#airport').on('click', function () {
+    jquery$1(".sales").hide();
+    jquery$1(".education").hide();
+    jquery$1(".energy").hide();
+    jquery$1(".logistics").hide();
+    jquery$1(".software").hide();
+    jquery$1(".healthcare").hide();
+    jquery$1(".airport").fadeIn();
+  });
+
+  jquery$1('#sales').on('click', function () {
+    jquery$1(".sales").fadeIn();
+    jquery$1(".education").hide();
+    jquery$1(".energy").hide();
+    jquery$1(".logistics").hide();
+    jquery$1(".software").hide();
+    jquery$1(".healthcare").hide();
+    jquery$1(".airport").hide();
+  });
+
+  jquery$1('#energy').on('click', function () {
+    jquery$1(".sales").hide();
+    jquery$1(".education").hide();
+    jquery$1(".energy").fadeIn();
+    jquery$1(".logistics").hide();
+    jquery$1(".software").hide();
+    jquery$1(".healthcare").hide();
+    jquery$1(".airport").hide();
+  });
+
+  jquery$1('#education').on('click', function () {
+    jquery$1(".sales").hide();
+    jquery$1(".education").hide();
+    jquery$1(".energy").fadeIn();
+    jquery$1(".logistics").hide();
+    jquery$1(".software").hide();
+    jquery$1(".healthcare").hide();
+    jquery$1(".airport").hide();
+  });
+
+  jquery$1('#logistics').on('click', function () {
+    jquery$1(".sales").hide();
+    jquery$1(".education").hide();
+    jquery$1(".energy").hide();
+    jquery$1(".logistics").fadeIn();
+    jquery$1(".software").hide();
+    jquery$1(".healthcare").hide();
+    jquery$1(".airport").hide();
+  });
+
+  jquery$1('#software').on('click', function () {
+    jquery$1(".sales").hide();
+    jquery$1(".education").hide();
+    jquery$1(".energy").hide();
+    jquery$1(".logistics").hide();
+    jquery$1(".software").fadeIn();
+    jquery$1(".healthcare").hide();
+    jquery$1(".airport").hide();
+  });
 };
 
 var Policy = function Policy() {

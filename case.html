@@ -94,18 +94,18 @@
   <!--begin services-->
 
   <ul class="tabs">
-    <li class="tab-link is-active" data-tab="tab-1"><p>Healthcare</p></li>
-    <li class="tab-link" data-tab="tab-2"><p>Education and<br> e-learning</p></li>
-    <li class="tab-link" data-tab="tab-3"><p>Automotive  <br>After-sales service</p></li>
-    <li class="tab-link" data-tab="tab-4"><p>Airport</p></li>
-    <li class="tab-link" data-tab="tab-5"><p>Logistics<br> Delivery</p></li>
-    <li class="tab-link" data-tab="tab-6"><p>Energy and Utilities</p></li>
-    <li class="tab-link" data-tab="tab-7"><p>Software and <br>Hi-tech Startups</p></li>
+    <li class="tab-link" id="healthcare"><p>Healthcare</p></li>
+    <li class="tab-link" id="education"><p>Education and<br> e-learning</p></li>
+    <li class="tab-link" id="sales"><p>Automotive  <br>After-sales service</p></li>
+    <li class="tab-link" id="airport"><p>Airport</p></li>
+    <li class="tab-link" id="logistics"><p>Logistics <br> Delivery</p></li>
+    <li class="tab-link" id="energy"><p>Energy and Utilities</p></li>
+    <li class="tab-link" id="software"><p>Software and <br>Hi-tech Startups</p></li>
   </ul>
 
   <div class="container">
-    <div id="tab-1" class="tab-content case-wrapper is-active ">
-      <div class="case js-pop-up-call">
+    <div class="case-wrapper">
+      <div class="case js-pop-up-call education">
         <img src="images/portfolio/ba-case.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__logo">
@@ -113,7 +113,7 @@
             Server, SOAP, REST, Integration Bus</p>
           <p class="case__tech"><strong>Scrum product management technology.</strong></p>
         </article>
-        <div class="single-case js-pop-up">
+        <div class="single-case js-pop-up education">
           <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__icon">
           <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
           <section class="case-info">
@@ -140,7 +140,7 @@
         </div>
       </div>
 
-      <div class="case js-pop-up-call">
+      <div class="case js-pop-up-call healthcare">
         <img src="images/portfolio/metavis-case.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/metavis.png" alt="case-logo" class="case__logo">
@@ -171,7 +171,7 @@
         </div>
       </div>
 
-      <div class="case js-pop-up-call">
+      <div class="case js-pop-up-call airport">
         <img src="images/portfolio/highway-case.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/time-highway.png" alt="case-logo" class="case__logo">
@@ -200,7 +200,8 @@
           </section>
         </div>
       </div>
-      <div class="case js-pop-up-call">
+
+      <div class="case js-pop-up-call airport">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/portfolio/case-logo.svg" alt="case-logo" class="case__logo">
@@ -228,386 +229,8 @@
           </section>
         </div>
       </div>
-    </div>
 
-    <div id="tab-4" class="tab-content case-wrapper">
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL
-            Server, SOAP, REST, Integration Bus</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">BA Insight created and developed the search-driven
-              applications, which have been using search in various
-              systems as a way to obtain, organize and present
-              the corporate information. The primary company
-              product was developed on the Microsoft SharePoint
-              platform. BA Insight was looking for a qualified
-              partner who could develop connectors to various
-              Enterprise Content Management systems in order
-              to retrieve information from ECM systems, read and
-              process data and make them securely searchable via
-              a unified search index.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL Server, SOAP, REST,
-              Integration Bus
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/metavis.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS,
-            Eclipse RCP framework, Azure
-            API (migration API), Weservices API, Hibernate, Apache Derby Database</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/metavis.png" alt="metavis" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">MetaVis Technologies, Inc. – startup created in 2008 in Exton, Pennsylvania. The
-              company was the leader in creation and development of the solution in the field of data management,
-              migration, storaging and security using the Microsoft Office technologies. The company products were
-              targeting towards the cloud and on-prem needs of large and medium enterprises: management of corporate
-              content. </p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS, Eclipse RCP framework,
-              Azure
-              API (migration API), Weservices API, Hibernate, Apache Derby Database
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/time-highway.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET Full Stack, DevExpress components, Microsoft
-            SQL Server</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/time-highway.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">TimeHighway is a leader in creating solutions for planning after sale services in
-              the field
-              of retail car sales. Company was founded in 2004, in Florida, USA. Solutions have been
-              developed by the retail car sales experts in order to facilitate scheduling of appointments,
-              car maintenance or other car services in real time. The TimeHighway solutions also help to
-              organize, computerize and customize dealer operations. On August 16, 2016 the company
-              had been acquired by Affinitiv Corporation.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET Full Stack, DevExpress components, Microsoft SQL Server
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/portfolio/case-logo.svg" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Front-end: </strong>React.js, HTML, CSS, jQuery, webpack.</p>
-          <p class="case__tech"><strong>Back-end: </strong>.NET, Web API2, C#, RabbitMQ, Swagger.</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/case-companies/case-logo-2.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">Vigilo is experiencing a fast-paced growth in the Norway’s
-              market. Due to the increased volume of tasks related to
-              the new product development company decided to find a
-              business partner capable of tackling partial implementation
-              of those tasks.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Front-end:</strong> React.js, HTML, CSS, JS, jQuery,
-              webpack.
-              <br><strong>Back-end:</strong> .NET, Web API2, C#, RabbitMQ, Swagger.
-              <br><strong> Scrum project management methodology.</strong></p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div id="tab-2" class="tab-content case-wrapper">
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL
-            Server, SOAP, REST, Integration Bus</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">BA Insight created and developed the search-driven
-              applications, which have been using search in various
-              systems as a way to obtain, organize and present
-              the corporate information. The primary company
-              product was developed on the Microsoft SharePoint
-              platform. BA Insight was looking for a qualified
-              partner who could develop connectors to various
-              Enterprise Content Management systems in order
-              to retrieve information from ECM systems, read and
-              process data and make them securely searchable via
-              a unified search index.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL Server, SOAP, REST,
-              Integration Bus
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/metavis.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS,
-            Eclipse RCP framework, Azure
-            API (migration API), Weservices API, Hibernate, Apache Derby Database</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/metavis.png" alt="metavis" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">MetaVis Technologies, Inc. – startup created in 2008 in Exton, Pennsylvania. The
-              company was the leader in creation and development of the solution in the field of data management,
-              migration, storaging and security using the Microsoft Office technologies. The company products were
-              targeting towards the cloud and on-prem needs of large and medium enterprises: management of corporate
-              content. </p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS, Eclipse RCP framework,
-              Azure
-              API (migration API), Weservices API, Hibernate, Apache Derby Database
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/time-highway.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET Full Stack, DevExpress components, Microsoft
-            SQL Server</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/time-highway.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">TimeHighway is a leader in creating solutions for planning after sale services in
-              the field
-              of retail car sales. Company was founded in 2004, in Florida, USA. Solutions have been
-              developed by the retail car sales experts in order to facilitate scheduling of appointments,
-              car maintenance or other car services in real time. The TimeHighway solutions also help to
-              organize, computerize and customize dealer operations. On August 16, 2016 the company
-              had been acquired by Affinitiv Corporation.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET Full Stack, DevExpress components, Microsoft SQL Server
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/portfolio/case-logo.svg" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Front-end: </strong>React.js, HTML, CSS, jQuery, webpack.</p>
-          <p class="case__tech"><strong>Back-end: </strong>.NET, Web API2, C#, RabbitMQ, Swagger.</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/case-companies/case-logo-2.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">Vigilo is experiencing a fast-paced growth in the Norway’s
-              market. Due to the increased volume of tasks related to
-              the new product development company decided to find a
-              business partner capable of tackling partial implementation
-              of those tasks.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Front-end:</strong> React.js, HTML, CSS, JS, jQuery,
-              webpack.
-              <br><strong>Back-end:</strong> .NET, Web API2, C#, RabbitMQ, Swagger.
-              <br><strong> Scrum project management methodology.</strong></p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="tab-3" class="tab-content case-wrapper">
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL
-            Server, SOAP, REST, Integration Bus</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">BA Insight created and developed the search-driven
-              applications, which have been using search in various
-              systems as a way to obtain, organize and present
-              the corporate information. The primary company
-              product was developed on the Microsoft SharePoint
-              platform. BA Insight was looking for a qualified
-              partner who could develop connectors to various
-              Enterprise Content Management systems in order
-              to retrieve information from ECM systems, read and
-              process data and make them securely searchable via
-              a unified search index.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL Server, SOAP, REST,
-              Integration Bus
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/metavis.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS,
-            Eclipse RCP framework, Azure
-            API (migration API), Weservices API, Hibernate, Apache Derby Database</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/metavis.png" alt="metavis" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">MetaVis Technologies, Inc. – startup created in 2008 in Exton, Pennsylvania. The
-              company was the leader in creation and development of the solution in the field of data management,
-              migration, storaging and security using the Microsoft Office technologies. The company products were
-              targeting towards the cloud and on-prem needs of large and medium enterprises: management of corporate
-              content. </p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS, Eclipse RCP framework,
-              Azure
-              API (migration API), Weservices API, Hibernate, Apache Derby Database
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/time-highway.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET Full Stack, DevExpress components, Microsoft
-            SQL Server</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/time-highway.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">TimeHighway is a leader in creating solutions for planning after sale services in
-              the field
-              of retail car sales. Company was founded in 2004, in Florida, USA. Solutions have been
-              developed by the retail car sales experts in order to facilitate scheduling of appointments,
-              car maintenance or other car services in real time. The TimeHighway solutions also help to
-              organize, computerize and customize dealer operations. On August 16, 2016 the company
-              had been acquired by Affinitiv Corporation.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET Full Stack, DevExpress components, Microsoft SQL Server
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-      <div class="case js-pop-up-call">
-        <img src="images/logo-cases/viglio.svg" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/viglio.svg" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Front-end: </strong>React.js, HTML, CSS, jQuery, webpack.</p>
-          <p class="case__tech"><strong>Back-end: </strong>.NET, Web API2, C#, RabbitMQ, Swagger.</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/case-companies/case-logo-2.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">Vigilo is experiencing a fast-paced growth in the Norway’s
-              market. Due to the increased volume of tasks related to
-              the new product development company decided to find a
-              business partner capable of tackling partial implementation
-              of those tasks.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Front-end:</strong> React.js, HTML, CSS, JS, jQuery,
-              webpack.
-              <br><strong>Back-end:</strong> .NET, Web API2, C#, RabbitMQ, Swagger.
-              <br><strong> Scrum project management methodology.</strong></p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div id="tab-5" class="tab-content case-wrapper">
-      <div class="case js-pop-up-call">
+      <div class="case js-pop-up-call healthcare">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__logo">
@@ -642,7 +265,7 @@
         </div>
       </div>
 
-      <div class="case js-pop-up-call">
+      <div class="case js-pop-up-call software">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/metavis.png" alt="case-logo" class="case__logo">
@@ -673,7 +296,7 @@
         </div>
       </div>
 
-      <div class="case js-pop-up-call">
+      <div class="case js-pop-up-call education">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/time-highway.png" alt="case-logo" class="case__logo">
@@ -702,7 +325,8 @@
           </section>
         </div>
       </div>
-      <div class="case js-pop-up-call">
+
+      <div class="case js-pop-up-call logistics">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/portfolio/case-logo.svg" alt="case-logo" class="case__logo">
@@ -730,9 +354,8 @@
           </section>
         </div>
       </div>
-    </div>
-    <div id="tab-6" class="tab-content case-wrapper">
-      <div class="case js-pop-up-call">
+
+      <div class="case js-pop-up-call healthcare">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__logo">
@@ -767,7 +390,7 @@
         </div>
       </div>
 
-      <div class="case js-pop-up-call">
+      <div class="case js-pop-up-call education">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/metavis.png" alt="case-logo" class="case__logo">
@@ -798,7 +421,7 @@
         </div>
       </div>
 
-      <div class="case js-pop-up-call">
+      <div class="case js-pop-up-call education">
         <img src="images/portfolio/case-1.png" alt="case" class="case__img">
         <article class="case__description">
           <img src="images/logo-cases/time-highway.png" alt="case-logo" class="case__logo">
@@ -827,161 +450,7 @@
           </section>
         </div>
       </div>
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/portfolio/case-logo.svg" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Front-end: </strong>React.js, HTML, CSS, jQuery, webpack.</p>
-          <p class="case__tech"><strong>Back-end: </strong>.NET, Web API2, C#, RabbitMQ, Swagger.</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/case-companies/case-logo-2.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">Vigilo is experiencing a fast-paced growth in the Norway’s
-              market. Due to the increased volume of tasks related to
-              the new product development company decided to find a
-              business partner capable of tackling partial implementation
-              of those tasks.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Front-end:</strong> React.js, HTML, CSS, JS, jQuery,
-              webpack.
-              <br><strong>Back-end:</strong> .NET, Web API2, C#, RabbitMQ, Swagger.
-              <br><strong> Scrum project management methodology.</strong></p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div id="tab-7" class="tab-content case-wrapper">
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL
-            Server, SOAP, REST, Integration Bus</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/ba-logo.png" alt="BA" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">BA Insight created and developed the search-driven
-              applications, which have been using search in various
-              systems as a way to obtain, organize and present
-              the corporate information. The primary company
-              product was developed on the Microsoft SharePoint
-              platform. BA Insight was looking for a qualified
-              partner who could develop connectors to various
-              Enterprise Content Management systems in order
-              to retrieve information from ECM systems, read and
-              process data and make them securely searchable via
-              a unified search index.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET, C#, Microsoft SharePoint, Microsoft SQL Server, SOAP, REST,
-              Integration Bus
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/metavis.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS,
-            Eclipse RCP framework, Azure
-            API (migration API), Weservices API, Hibernate, Apache Derby Database</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/metavis.png" alt="metavis" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">MetaVis Technologies, Inc. – startup created in 2008 in Exton, Pennsylvania. The
-              company was the leader in creation and development of the solution in the field of data management,
-              migration, storaging and security using the Microsoft Office technologies. The company products were
-              targeting towards the cloud and on-prem needs of large and medium enterprises: management of corporate
-              content. </p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Sharepoint APIS, Box APIS, Dropbox APIS, Google APIS, Eclipse RCP framework,
-              Azure
-              API (migration API), Weservices API, Hibernate, Apache Derby Database
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/logo-cases/time-highway.png" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Technology: </strong>Microsoft .NET Full Stack, DevExpress components, Microsoft
-            SQL Server</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/logo-cases/time-highway.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">TimeHighway is a leader in creating solutions for planning after sale services in
-              the field
-              of retail car sales. Company was founded in 2004, in Florida, USA. Solutions have been
-              developed by the retail car sales experts in order to facilitate scheduling of appointments,
-              car maintenance or other car services in real time. The TimeHighway solutions also help to
-              organize, computerize and customize dealer operations. On August 16, 2016 the company
-              had been acquired by Affinitiv Corporation.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Technology:</strong>Microsoft .NET Full Stack, DevExpress components, Microsoft SQL Server
-              <br><strong> Scrum project management methodology.</strong>
-            </p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-      <div class="case js-pop-up-call">
-        <img src="images/portfolio/case-1.png" alt="case" class="case__img">
-        <article class="case__description">
-          <img src="images/portfolio/case-logo.svg" alt="case-logo" class="case__logo">
-          <p class="case__tech"><strong>Front-end: </strong>React.js, HTML, CSS, jQuery, webpack.</p>
-          <p class="case__tech"><strong>Back-end: </strong>.NET, Web API2, C#, RabbitMQ, Swagger.</p>
-          <p class="case__tech"><strong>Scrum product management technology.</strong></p>
-        </article>
-        <div class="single-case js-pop-up">
-          <img src="images/case-companies/case-logo-2.png" alt="" class="case__icon">
-          <button class="close single-case__close"><img src="images/icons/close.svg" alt="close"></button>
-          <section class="case-info">
-            <p class="case-info__text">Vigilo is experiencing a fast-paced growth in the Norway’s
-              market. Due to the increased volume of tasks related to
-              the new product development company decided to find a
-              business partner capable of tackling partial implementation
-              of those tasks.</p>
-            <p class="case-info__text case-info__text--tech">
-              <strong>Front-end:</strong> React.js, HTML, CSS, JS, jQuery,
-              webpack.
-              <br><strong>Back-end:</strong> .NET, Web API2, C#, RabbitMQ, Swagger.
-              <br><strong> Scrum project management methodology.</strong></p>
-            <button class="case-download button button--green">Download case</button>
-            <a href="order-now.html" class="case-download button button">Order</a>
-            <img src="images/portfolio/case-1.png" alt="" class="case-img">
-          </section>
-        </div>
-      </div>
-    </div>
+  </div>
   </div>
 </main>
 
