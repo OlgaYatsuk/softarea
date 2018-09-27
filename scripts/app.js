@@ -13877,7 +13877,7 @@ var Header = function Header() {
   var $hiddenInput = jquery$1('.input-hidden');
 
   if ($hiddenInput) {
-    windowLocation = windowLocation.replace('%20', ' ');
+    windowLocation = windowLocation.replace(/%20/g, ' ');
     $hiddenInput.val(windowLocation);
   }
 })();
