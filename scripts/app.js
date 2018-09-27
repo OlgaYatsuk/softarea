@@ -13678,8 +13678,8 @@ var Slider = function () {
     classCallCheck(this, Slider);
 
     var defaultConfig = {
-      autoplaySpeed: 2200,
-      autoplay: false,
+      autoplaySpeed: 4000,
+      autoplay: true,
       pauseOnHover: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -13923,6 +13923,7 @@ var Tabs = function Tabs() {
 
   function init() {
     $tab.on('click', showTab);
+    $tab.on('click', changeContent);
   }
 
   function showTab() {
@@ -13932,75 +13933,14 @@ var Tabs = function Tabs() {
     jquery$1(this).addClass('is-active');
   }
 
-  jquery$1("#healthcare").on('click', function () {
-    jquery$1(".sales").hide();
-    jquery$1(".education").hide();
-    jquery$1(".energy").hide();
-    jquery$1(".logistics").hide();
-    jquery$1(".airport").hide();
-    jquery$1(".software").hide();
-    jquery$1(".healthcare").fadeIn();
-  });
+  function changeContent(e) {
+    e.preventDefault();
+    var a = jquery$1(this).data('id');
 
-  jquery$1('#airport').on('click', function () {
-    jquery$1(".sales").hide();
-    jquery$1(".education").hide();
-    jquery$1(".energy").hide();
-    jquery$1(".logistics").hide();
-    jquery$1(".software").hide();
-    jquery$1(".healthcare").hide();
-    jquery$1(".airport").fadeIn();
-  });
-
-  jquery$1('#sales').on('click', function () {
-    jquery$1(".sales").fadeIn();
-    jquery$1(".education").hide();
-    jquery$1(".energy").hide();
-    jquery$1(".logistics").hide();
-    jquery$1(".software").hide();
-    jquery$1(".healthcare").hide();
-    jquery$1(".airport").hide();
-  });
-
-  jquery$1('#energy').on('click', function () {
-    jquery$1(".sales").hide();
-    jquery$1(".education").hide();
-    jquery$1(".energy").fadeIn();
-    jquery$1(".logistics").hide();
-    jquery$1(".software").hide();
-    jquery$1(".healthcare").hide();
-    jquery$1(".airport").hide();
-  });
-
-  jquery$1('#education').on('click', function () {
-    jquery$1(".sales").hide();
-    jquery$1(".education").hide();
-    jquery$1(".energy").fadeIn();
-    jquery$1(".logistics").hide();
-    jquery$1(".software").hide();
-    jquery$1(".healthcare").hide();
-    jquery$1(".airport").hide();
-  });
-
-  jquery$1('#logistics').on('click', function () {
-    jquery$1(".sales").hide();
-    jquery$1(".education").hide();
-    jquery$1(".energy").hide();
-    jquery$1(".logistics").fadeIn();
-    jquery$1(".software").hide();
-    jquery$1(".healthcare").hide();
-    jquery$1(".airport").hide();
-  });
-
-  jquery$1('#software').on('click', function () {
-    jquery$1(".sales").hide();
-    jquery$1(".education").hide();
-    jquery$1(".energy").hide();
-    jquery$1(".logistics").hide();
-    jquery$1(".software").fadeIn();
-    jquery$1(".healthcare").hide();
-    jquery$1(".airport").hide();
-  });
+    jquery$1('.js-pop-up-call').each(function () {
+      if (!jquery$1(this).hasClass(a)) jquery$1(this).addClass('hide');else jquery$1(this).removeClass('hide');
+    });
+  }
 };
 
 var Policy = function Policy() {
