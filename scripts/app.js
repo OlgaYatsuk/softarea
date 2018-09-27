@@ -13811,7 +13811,9 @@ var Policy = function Policy() {
 
   function init() {
     $policySubmit.on('click', hideBlock);
-    $policySubmit.on('click', checkStateCookies);
+    if ($policyWindow) {
+      $policySubmit.on('click', checkStateCookies);
+    }
   }
 
   function hideBlock() {
@@ -13869,6 +13871,12 @@ var Header = function Header() {
     });
   }
 };
+
+var $hiddenInput = jquery$1('.input-hidden');
+
+if ($hiddenInput) {
+  $hiddenInput.val(window.location.href);
+}
 
 Scroll();
 Dropdown();
