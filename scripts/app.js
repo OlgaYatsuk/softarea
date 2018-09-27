@@ -13872,11 +13872,15 @@ var Header = function Header() {
   }
 };
 
-var $hiddenInput = jquery$1('.input-hidden');
+(function () {
+  var windowLocation = window.location.search;
+  var $hiddenInput = jquery$1('.input-hidden');
 
-if ($hiddenInput) {
-  $hiddenInput.val(window.location.href);
-}
+  if ($hiddenInput) {
+    windowLocation = windowLocation.replace('%20', ' ');
+    $hiddenInput.val(windowLocation);
+  }
+})();
 
 Scroll();
 Dropdown();
