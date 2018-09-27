@@ -13767,7 +13767,10 @@ var Menu = function Menu() {
     $burgerMenu.slideUp(700);
     $burgerMenuIcon.show();
     $burgerCloseBtn.hide();
-    jquery$1('.header-hidden').css('background', 'rgba(255, 255, 255, 0.55)');
+
+    if (jquery$1(window).width() < 1024) {
+      jquery$1('.header-hidden').css('background', 'rgba(255, 255, 255, 0.55)');
+    }
   }
 };
 
@@ -13859,6 +13862,10 @@ var Header = function Header() {
         jquery$1('.header-hidden').addClass('off-canvas');
       }
       scroll = jquery$1(document).scrollTop();
+
+      if (jquery$1('.burger-container').hasClass('')) {
+        jquery$1('.header-hidden').addClass('fixed');
+      }
     });
   }
 };
